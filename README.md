@@ -1,10 +1,9 @@
-TestCoin (TSC) - a 'faster' version of Litecoin which also uses scrypt
-as a proof of work scheme and is intended for microtransactions.
- - 15 seconds block targets: beat that MinCoin! ;)
- - 42 007 680 total coins
+TestCoin (TSC) - a testcoin based of LiteCoin, it has faster block generation time to ensure faster transaction times.  It also relases a significant amount of coins.
+ - 30 seconds block targets
+ - 1 000 000 000 total coins
  - no subsidy within the first 3 days and after approximately 5 years;
     in between: 4 coins per generated block
- - difficulty retargets every 0.35 days
+ - difficulty retargets every 1 days
  - currently peers are looked up over IRC only
  - currently no block checkpoints are in the code (but could be easily
    added)
