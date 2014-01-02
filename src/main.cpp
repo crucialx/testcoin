@@ -28,8 +28,23 @@ CCriticalSection cs_main;
 CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
+/*
+
+
+block.nTime = 1388664707
+block.nNonce = 388298692
+block.GetHash = a5c4858b0b29bb291dc3d108b65f67e7738bebcd2e04225c4c66ccb1e476b6e1
+CBlock(hash=a5c4858b0b29bb291dc3, PoW=00000e6ddc1dcba19c2d, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=12a61dbfd6, nTime=1388664707, nBits=1e0ffff0, nNonce=388298692, vtx=1)
+  CTransaction(hash=12a61dbfd6, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, -1), coinbase 04ffff001d01041c53746172746564206f6e20326e6420446563656d6265722032303133)
+    CTxOut(error)
+  vMerkleTree: 12a61dbfd6
+
+  
+ */
+ 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x384b060671f4a93948e9c168216dadb0ca2fbc54aa11c86b0345b6af1c59b2f5");
+uint256 hashGenesisBlock("0xa5c4858b0b29bb291dc3d108b65f67e7738bebcd2e04225c4c66ccb1e476b6e1");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2033,7 +2048,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1388664707;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 2085386442;
+        block.nNonce   = 388298692;
 
         if (fTestNet)
         {
