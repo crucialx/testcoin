@@ -1151,7 +1151,7 @@ void MapPort()
 static const char *strDNSSeed[][2] = {
     //{"litecoinpool.org", "dnsseed.litecoinpool.org"},
     //{"bytesized-vps.com", "dnsseed.bytesized-vps.com"},
-    {"testcoin.1 vps", "182.160.154.27"},
+    //{"testcoin.1 vps", "182.160.154.27"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
